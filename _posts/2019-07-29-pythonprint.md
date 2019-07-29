@@ -1,5 +1,5 @@
 ---
-date: 2017-01-16
+date: 2019-07-29
 title: Python Print 
 categories:
   - python
