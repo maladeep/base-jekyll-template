@@ -1,0 +1,193 @@
+---
+date: 2019-07-31
+title: CSS: Heart
+categories:
+  - CSS Tricks
+description: Creating Heart using CSS.
+type: Document
+---
+
+
+
+# Heart in CSS
+CSS stands as Cascading Style Sheets  which is  a complex language that packs quite a bit of power and assist HTML.It allows us to add layout and design to our pages, and it allows us to share those styles from element to element and page to page. It  gives you the power of visualization at exact points.(How? New Post coming soon!)
+
+
+# CSS Trick: Heart 
+
+Let’s learn to create Heart using just CSS that might come handy during valentine day. Jokes apart.
+
+Let’s dive into.
+
+
+To create heart, we just need two basic geometric shape:
+* Square 
+* Circle    
+We will use 1 square and 2 circle to create heart.
+
+![](Heart%20in%20CSS/Screen%20Shot%202019-07-31%20at%2010.03.38%20PM.png)
+
+Now,
+Open any text editors like Atom,notepad: Say Sublime 
+ and type the following code.
+```HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heart</title>
+</head>
+<body>
+
+<div  class="heart"></div>
+</body>
+</html>
+
+
+```
+
+
+Here we have created a div section and created class called heart.
+
+Now, just using class called heart we will create heart.
+
+
+CSS can be added to HTML elements in 3 ways:
+* Inline - by using the style attribute in HTML elements.
+* Internal - by using a <style> element in the <head> section.
+* External - by using an external CSS file.
+
+Here, for simplicity and as we have less css contain we will use internal  CSS using  `<style> </style>` tag in  `<head> </head>` section.
+
+``` CSS
+div.heart{
+		display: block;
+		margin:100px;
+		width: 100px;
+		height: 100px;
+		background-color: red ;
+		position: relative;
+		transform: rotateZ(-45deg);
+
+
+	}
+
+```
+
+After this, we get output  as Square  rotated in -45 degree with red colored.
+
+
+![](Heart%20in%20CSS/Screen%20Shot%202019-07-31%20at%209.38.07%20PM.png)
+
+
+Now lets add give the proper shape of Heart.
+
+
+Lets add the following code just below the previous css.
+
+
+```CSS
+
+	div.heart:after,
+	div.heart:before{
+		display: block;
+		content:'';
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		border-color: blue;
+		border-radius: 50px;
+		position: absolute; 
+	}
+
+
+
+```
+
+
+And lets add next code block
+
+```CSS
+	div.heart:after{
+		top: -50px;
+		left:0;
+	}
+
+	div.heart:before{
+		top:0;
+		left: 50px;
+	}
+
+```
+
+Output will be as expected:
+
+
+![](Heart%20in%20CSS/Screen%20Shot%202019-07-31%20at%209.39.12%20PM.png)
+
+
+So the final code will look like:
+
+```HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heart</title>
+
+
+<style type="text/css">
+	div.heart{
+		display: block;
+		margin:100px;
+		width: 100px;
+		height: 100px;
+		background-color: red ;
+		position: relative;
+		transform: rotateZ(-45deg);
+
+
+	}
+
+
+	div.heart:after,
+	div.heart:before{
+		display: block;
+		content:'';
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		border-color: blue;
+		border-radius: 50px;
+		position: absolute; 
+	}
+	div.heart:after{
+		top: -50px;
+		left:0;
+	}
+
+	div.heart:before{
+		top:0;
+		left: 50px;
+	}
+</style>
+
+
+
+</head>
+<body>
+
+<div  class="heart"></div> 
+</body>
+</html>
+
+```
+
+
+
+See, just using CSS, we are able to create Heart.
+Now feel free to share this heart with your beloved one.
+
+
+Happy coding ^_^
+
+If any queries, ping me to my email.
