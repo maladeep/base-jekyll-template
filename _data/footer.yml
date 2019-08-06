@@ -3,7 +3,7 @@
   new_window: true
   social_icon: website
 - name:
-  link: http://linkedin.com/maladeep
+  link: http://www.linkedin.com/maladeep
   social_icon: Linkedin
   new_window: true
 - name:
@@ -14,3 +14,7 @@
   link: /feed.xml
   social_icon: RSS
   new_window: false
+- name: 
+  link: http://github.com/maladeep 
+  social_icon: GitHub
+  new_window: true
