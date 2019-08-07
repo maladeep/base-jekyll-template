@@ -66,6 +66,15 @@ Python is Awesome
 ### Final code: 
 
 
+
+
+
+
+
+
+
+
+
 ```python
 
 x = {}
@@ -93,6 +102,8 @@ Output:
 
 [More on setdefault() ](https://docs.python.org/3/library/stdtypes.html)
 
+
+[GitHub gist](https://gist.github.com/maladeep/9005ba128d7f1be954ad16d14c1ffb89)
 
 
 ### Time to  put some effort
