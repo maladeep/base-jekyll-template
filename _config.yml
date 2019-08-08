@@ -9,10 +9,10 @@ disqus_shortname: disqus_bDGwSo5kTq
 newsletter_action:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: MD
+logo: 
 description: A blog from Mala Deep
 author:
-  name:Mala Deep
+  name: Mala Deep
   email:
   twitter: # twitter username without the @ symbol
 social:
